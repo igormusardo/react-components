@@ -1,0 +1,51 @@
+{
+  "name": "react-components",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "http://192.168.1.190:8000/api/v4/projects/328/packages/npm/"
+  },  
+  "scripts": {
+    "start": "react-scripts start",
+    "build-examples": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:coreui/coreui-pro-react-admin-template.git"
+  },  
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^10.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^5.0.1",
+    "rimraf": "^4.4.0",
+    "@coreui/coreui-pro": "^3.4.0",
+    "@coreui/react": "^3.4.0",
+    "react-input-mask": "^2.0.4",
+    "reactstrap": "^8.5.1",
+    "react-currency-input-field": "^3.6.4",
+    "react-select": "^3.1.1",
+    "date-fns": "^2.23.0",
+    "date-fns-tz": "^1.1.6"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
