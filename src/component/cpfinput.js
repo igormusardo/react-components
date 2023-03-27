@@ -1,7 +1,7 @@
 import React from 'react';
 import InputMask from 'react-input-mask';
 
-export const CpfInput = (props) => (   
+const CpfInput = (props) => (   
   <InputMask 
     mask="999.999.999-99" 
     value={props.value} 
@@ -10,3 +10,5 @@ export const CpfInput = (props) => (
     maskChar='_'>
   </InputMask>
 );
+
+export default CpfInput;

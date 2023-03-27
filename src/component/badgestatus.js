@@ -1,7 +1,7 @@
 import React from 'react';
 import CBadge from '@coreui/react/es/badge/CBadge';
  
-export const BadgeStatus = (props) => {
+const BadgeStatus = (props) => {
   let color = `info`
   let title = ``
   if (props.color == undefined){
@@ -26,3 +26,5 @@ export const BadgeStatus = (props) => {
     </CBadge>
   )
 };
+
+export default BadgeStatus;

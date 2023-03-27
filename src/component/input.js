@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Input as BootstrapInput } from 'reactstrap';
 
-export const Input = (props) => {
+const Input = (props) => {
   const [value, setValue] = useState(undefined);
 
   const _onChange = (e) => {
@@ -37,3 +37,5 @@ export const Input = (props) => {
     />
   );
 }
+
+export default Input;
