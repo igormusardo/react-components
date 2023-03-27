@@ -1,16 +1,23 @@
 {
-  "name": "react-components",
-  "version": "1.0.0",
+  "name": "@a52/components",
+  "version": "1.0.1",
+  "private": false,
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
     "dist"
   ],
   "publishConfig": {
+    "access": "restricted",
     "registry": "http://tig.a52.com.br/api/v4/projects/39/packages/npm/"
-  },  
+  },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "webpack",
     "build-examples": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -18,23 +25,34 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:coreui/coreui-pro-react-admin-template.git"
-  },  
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^10.0.1",
+    "url": "git+http://tig.a52.com.br/utils/react-components.git"
+  },
+  "peerDependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "^5.0.1",
-    "rimraf": "^4.4.0",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/preset-react": "^7.18.6",
     "@coreui/coreui-pro": "^3.4.0",
     "@coreui/react": "^3.4.0",
-    "react-input-mask": "^2.0.4",
-    "reactstrap": "^8.5.1",
-    "react-currency-input-field": "^3.6.4",
-    "react-select": "^3.1.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^10.0.1",
     "date-fns": "^2.23.0",
-    "date-fns-tz": "^1.1.6"
+    "date-fns-tz": "^1.1.6",
+    "react": "^17.0.1",
+    "react-currency-input-field": "^3.6.4",
+    "react-dom": "^17.0.1",
+    "react-input-mask": "^2.0.4",
+    "react-scripts": "^5.0.1",
+    "react-select": "^3.1.1",
+    "reactstrap": "^8.5.1",
+    "rimraf": "^4.4.0",
+    "webpack": "^5.76.3"
   },
   "browserslist": {
     "production": [
