@@ -1,0 +1,83 @@
+:root {
+  --color-primary: #0A2942;
+  --color-secondary: #F3C528;
+  --ft-color-primary: #222;
+  --ft-color-secondary: #fff;
+}
+
+.card-perfil-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px
+}
+
+.card-perfil-container .card-empresa {
+  width: 200px;
+  height: 220px;
+
+  border-radius: 4px;
+
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, .3);
+}
+
+.card-perfil-container .card-header-empresa {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+
+  color: var(--ft-color-secondary);
+  background: var(--color-primary);
+  border-radius: 4px 4px 0 0;
+}
+
+.card-header-empresa .icone-empresa {
+  min-width: 40px;
+  height: 40px;
+  background: var(--ft-color-secondary);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header-empresa .icone-empresa svg {
+  width: 100%;
+  height: 62%;
+}
+
+.card-header-empresa .icone-empresa svg path {
+  color: var(--color-secondary);
+}
+
+.card-body-empresa {
+  padding: 8px;
+}
+
+.card-body-empresa ul {
+  height: 128px;
+  overflow-y: auto;
+
+  padding-left: 16px;
+}
+
+.card-body-empresa ul::-webkit-scrollbar {
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 2px;
+  width: 8px;
+}
+
+.card-body-empresa ul::-webkit-scrollbar-thumb {
+  height: 4px;
+  background: var(--color-primary);
+}
+
+.card-body-empresa ul li::marker {
+  color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+  .card-perfil-container {
+    justify-content: center;
+  }
+}

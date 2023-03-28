@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+}
+
+.editor-container {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    margin-top: 40px;
+    
+    border: 2px solid #ccc;
+
+    -webkit-box-shadow: -1px 3px 8px 1px rgba(0,0,0,0.25);
+    -moz-box-shadow: -1px 3px 8px 1px rgba(0,0,0,0.25);
+    box-shadow: -1px 3px 8px 1px rgba(0,0,0,0.25);
+}
+
+.quill {
+    -webkit-box-shadow: -1px 3px 8px 1px rgba(0,0,0,0.25);
+    -moz-box-shadow: -1px 3px 8px 1px rgba(0,0,0,0.25);
+    box-shadow: -1px 3px 8px 1px rgba(0,0,0,0.25);
+}
+.ql-toolbar.ql-snow {
+    border: 0;
+}
+
+.ql-container.ql-snow {
+    min-height: 200px;
+    
+    border: 0;
+    
+    overflow-y: scroll;
+    
+    background: #46424215;
+}
+
+iframe {
+    min-width: 700px;
+    height: 450px;
+}
+
+.ql-toolbar.ql-snow {
+   background: #0c3252;
+}
+
+.ql-formats {
+    background: transparent;
+}
+
+.ql-snow .ql-fill, .ql-snow .ql-stroke.ql-fil {
+    fill: #fff;
+} 
+
+.ql-snow .ql-stroke {
+    fill: none;
+    stroke: #fff;
+};
+
+.ql-font {
+    color: #fff;
+}
+
+.ql-picker-label {
+    color: #fff;
+}
+
+.quill button:hover {
+    color: #fff;
+}
+
+.editor-input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.editor-input-field span, .editor-container .conteudo {
+    color: red;
+}
+
+.editor-input-field input {
+    height: 36px;
+    margin: 8px 0;
+    padding: 8px;
+    
+    border-radius: 4px;
+    border: 0;
+    font-size: 14px;
+    outline-color: #ccccccaa;
+    
+    background: #46424215;
+}
+
+.editor-input-field input::placeholder {
+    font-size: 14px;
+    color: #777;
+}
+
+.editor-container label span.conteudo {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.editor-container button.editor-btn-salvar {
+    margin: 24px 8px 0px 0px;
+    width: 100px;
+}

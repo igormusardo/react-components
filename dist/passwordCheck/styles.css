@@ -1,0 +1,24 @@
+.passwordcheck-container {
+    max-width: 540px;
+    padding: 16px 0;
+}
+
+.passwordcheck-container .check-title {
+    font-weight: bold;
+}
+
+.passwordcheck-container .check-item {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.passwordcheck-container .check-item svg.check {
+    fill: #50E1A4;
+}
+
+.passwordcheck-container .check-item svg.plus {
+    fill: #EC6767;
+    transform: rotate(45deg);
+}

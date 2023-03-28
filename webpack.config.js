@@ -17,6 +17,7 @@ module.exports = {
         umdNamedDefine: true
     },
     plugins: [
+        
         new WebpackShellPluginNext({
             onBuildStart:{
               scripts: ['echo "===> Starting packing with WEBPACK 5"'],
