@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect }  from 'react';
 import InputMask from 'react-input-mask';
 import { findDOMNode } from 'react-dom';
-import { formatarData, formatarDataToUtc } from '../helpers/formatacoes/datas';
+import { formatarData, formatarDataToUtc } from './helpers/formatacoes/datas';
 
 export const DateInput = (props) => {
   const [valor, setValor] = useState(undefined);

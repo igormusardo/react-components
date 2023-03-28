@@ -1,12 +1,15 @@
-import React from 'react';
-import { render } from "react-dom";
-import { CpfInput } from "./component";
-
-const App = () => (
-  <div style={{ width: 640, margin: "15px auto" }}>
-    <h1>CPF</h1>
-    <CpfInput label="CPF" placeholder="111.111.111-67" onChange="(e) => console.log(e.target.value.trim());" />
-  </div>
-);
-
-render(<App />, document.getElementById("root"));
+export { Input }  from './input';
+export { NumberInput } from './numberinput';
+export { Select }  from './select';
+export { Checkbox }  from './checkbox';
+export { Label }  from './label';
+export { DateInput }  from './dateInput';
+export { TimeInput }  from './timeInput';
+export { DateTimeInput }  from './datetimeInput';
+export { MultiSelect }  from './multiselect';
+export { ExercicioInput }  from './exercicioInput';
+export { CepInput }  from './cepinput';
+export { CpfInput }  from './cpfinput';
+export { PlacaInput }  from './placaInput';
+export { BadgeStatus }  from './badgestatus';
+export { DecimalInput } from './decimalInput';
